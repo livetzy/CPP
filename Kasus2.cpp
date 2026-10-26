@@ -23,6 +23,5 @@ int main() {
     cout<<"Bayaran Tamabahan :"<<overpay<<endl;
     cout<<"Total Upah :"<<totalupah<<endl;
 
-
     return 0;
 }

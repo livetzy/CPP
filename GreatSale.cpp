@@ -16,7 +16,6 @@ int main() {
     cout << "Masukan jumlah barang yang di beli : ";
     cin>>jumlah;
 
-   
     if (jenis == 1) {
         biaya = 55000;
         nm_barang = "A4 MERK PAPER";
@@ -56,7 +55,6 @@ int main() {
         }
     }
         
-
     total_biaya_diskon = biaya * jumlah * (1 - diskon);
 
     total_biaya = total_biaya_diskon - potongan_harga;
@@ -67,8 +65,6 @@ int main() {
     cout << "Total Yang Harus Di Bayar : " << total_biaya << endl;
     cout << "" << endl;
      
-
-
 
 
 }
