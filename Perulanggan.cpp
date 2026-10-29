@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    int n = 5;
+    int n = 10;
 
     for (int i=1 ; i<=10 ; i++){
         for (int j=1 ; j<=i ; j++) {
@@ -33,6 +33,7 @@ int main() {
     cout<<endl;
     }
 
+    // ketupat di yang di atas
      for (int i = 1; i <= n; i++) {
         for (int j = i; j < n; j++) {
             cout << " ";
@@ -58,7 +59,34 @@ int main() {
         cout << endl;
     }
 
+    for (int i=1 ; i <=5 ; i++) {
+        cout << '*' << " ";
+    cout<<endl;
+    }
+
+    int y = 5;
+
+    for (int i = 1 ; i<=y ; i++ ) {
+        for (int j=i ; j<y ; j++) {
+            cout << " " ;
+        }
+
+        for (int k=1 ; k<= 2 * i - 1 ; k++) {
+            cout << "*";
+        }
+        cout<<endl;
+    }
+
+
+
+
+
+
+
+
+
     return 0;
 }
+
 
 
