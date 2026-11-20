@@ -37,22 +37,27 @@ int main() {
         cout << "masukan angka ke-"<<k<< " :";
         cin>>j[k];
     }
+    cout<<endl;
 
+    int jmlhpositif = 0;
+    cout << "Angka Positif :" << endl;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 == 0 ) {
-            cout << j[p] << " ";
+            cout << j[p] << " " << endl;
+            jmlhpositif += j[p];
         }
     }
-
-    // for (int p = 1 ; p <= l ; p++) {
-    //     if ( j[p] % 2 == 0 ) {
-    //         cout << j[p] << " ";
-    //     }else {
-    //         cout << j [p] << " ";
-    //     }
-    // }
-
-
+    cout << "jumlah positif : " << jmlhpositif << endl;
+    
+    int jmlhnegatif = 0;
+    cout << "Angka Negatif :" << endl;
+    for (int p = 1 ; p <= l ; p++) {
+        if ( j[p] % 2 != 0 ) {
+            cout << j[p] << " " << endl;
+            jmlhnegatif += j[p];
+        }
+    }
+    cout << "jumlah negatif : " << jmlhnegatif << endl;
 
 
 
