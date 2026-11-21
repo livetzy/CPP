@@ -43,23 +43,29 @@ int main() {
     cout << "Angka Positif :" << endl;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 == 0 ) {
-            cout << j[p] << " " << endl;
-            jmlhpositif += j[p];
+           if ( j[p] % 2 != 0) {
+                cout << j[p] << " ";
+           }else {
+                cout << j[p] << " + ";
+           }
+        jmlhpositif += j[p];
         }
     }
-    cout << "jumlah positif : " << jmlhpositif << endl;
+    cout << " = " << jmlhpositif << endl;
     
     int jmlhnegatif = 0;
     cout << "Angka Negatif :" << endl;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 != 0 ) {
-            cout << j[p] << " " << endl;
-            jmlhnegatif += j[p];
+            if ( p < l ) {
+                cout << j[p] << " + " ;
+            }else {
+                cout << j[p] << " ";
+            }
+        jmlhnegatif += j[p];    
         }
     }
-    cout << "jumlah negatif : " << jmlhnegatif << endl;
-
-
+    cout << " = " << jmlhnegatif << endl;
 
 }
 
