@@ -43,7 +43,7 @@ int main() {
     cout << "Angka Positif :" << endl;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 == 0 ) {
-           if ( j[p] % 2 != 0) {
+           if ( j[p] % 2 == 0 && j[p] ) {
                 cout << j[p] << " ";
            }else {
                 cout << j[p] << " + ";
@@ -60,7 +60,7 @@ int main() {
             if ( p < l ) {
                 cout << j[p] << " + " ;
             }else {
-                cout << j[p] << " ";
+                cout << j[p] << " ";    
             }
         jmlhnegatif += j[p];    
         }
