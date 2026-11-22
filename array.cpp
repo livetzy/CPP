@@ -41,28 +41,30 @@ int main() {
 
     int jmlhpositif = 0;
     cout << "Angka Positif :" << endl;
+    bool angkaPertama = true;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 == 0 ) {
-           if ( j[p] % 2 == 0 && j[p] ) {
-                cout << j[p] << " ";
-           }else {
-                cout << j[p] << " + ";
-           }
-        jmlhpositif += j[p];
+            if (!angkaPertama) {
+                cout << " + ";
+            }
+            cout << j[p];
+            angkaPertama = false;
+            jmlhpositif += j[p];
         }
     }
     cout << " = " << jmlhpositif << endl;
     
     int jmlhnegatif = 0;
     cout << "Angka Negatif :" << endl;
+    bool angkaNegatifPertama = true;
     for (int p = 1 ; p <= l ; p++) {
         if ( j[p] % 2 != 0 ) {
-            if ( p < l ) {
-                cout << j[p] << " + " ;
-            }else {
-                cout << j[p] << " ";    
+            if (!angkaNegatifPertama) {
+                cout << " + ";
             }
-        jmlhnegatif += j[p];    
+            cout << j[p];
+            angkaNegatifPertama = false;
+            jmlhnegatif += j[p];
         }
     }
     cout << " = " << jmlhnegatif << endl;
