@@ -39,6 +39,10 @@ int main() {
     }
     cout<<endl;
 
+    for (int u = 1 ; u <= l ; u++) {
+        cout<<u<<". "<< j[u] << endl;
+    }
+
     int jmlhpositif = 0;
     cout << "Angka Positif :" << endl;
     bool angkaPertama = true;
@@ -69,6 +73,8 @@ int main() {
     }
     cout << " = " << jmlhnegatif << endl;
 
+
+
     int f [] = {};
 
     int jumlahindeks = 0;
@@ -86,10 +92,6 @@ int main() {
     }
 
     
-
-
-
-
 }
 
 
