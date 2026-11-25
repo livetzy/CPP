@@ -68,20 +68,24 @@ int main() {
         }
     }
     cout << " = " << jmlhnegatif << endl;
+
+    int f [] = {};
+
+    int jumlahindeks = 0;
+
+    cout << "masukan jumlah indeks di dalam array :";
+    cin>>jumlahindeks;
+
+    for (int i = 1 ; i <= jumlahindeks ; i++) {
+        cout << "masukan angka ke-"<<i<< " : ";
+        cin>>f[i];
+    }
+
+    for (int j = 1 ; j <= jumlahindeks ; j++) {
+        cout<<f[j]<<" ";
+    }
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
