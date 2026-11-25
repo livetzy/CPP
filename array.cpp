@@ -68,6 +68,23 @@ int main() {
         }
     }
     cout << " = " << jmlhnegatif << endl;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
