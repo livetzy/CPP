@@ -46,28 +46,30 @@ int main() {
     // }
 
 
-    int matriksL[10][10] = {} ;
+    int nilai[10][10] = {} ;
     string nama[] ={"jabez", "jordan", "jobel"};
-    string keterangan[] = {"Nama", "Matematika", "Bahasa indonesia", "Bahasa Inggris"};
+    string keterangan[] = {"Nama", "Matematika", "Bahasa indonesia", "Bahasa Inggris", "RataRata"};
+    int RataRata;
 
     for (int i = 0 ; i < 3 ; i++) {
         for(int j = 0 ; j < 3 ; j++) {
-            cout << "masukan nilai ["<<i<<"] ["<<j<<"] :  ";
-            cin>>matriksL[i][j];
+            cout << "masukan nilai ["<<nama[i]<<"] ["<<keterangan[j + 1]<<"] :  ";
+            cin>>nilai[i][j];
         }
     }
 
-    cout<< "laporan nilai mahasiswa"<<endl;
+    cout<< "LAPORAN NILAI MAHASISWA"<<endl;
     cout<< "=------------------------------------------------------------------------------------="<<endl;
-    for (int i = 0 ; i < 4 ; i++) {
-        cout << keterangan[i]<<"\t";
+    for (int i = 0 ; i < 5 ; i++) {
+        cout << keterangan[i]<<"\t\t";
     }cout<<endl;
     for ( int i = 0 ; i < 3 ; i++) {
         cout<<nama[i]<<"\t\t";
         for ( int j = 0 ; j < 3 ; j++) {
-            cout<<matriksL[i][j]<<"\t\t\t";
+            cout<<nilai[i][j]<<"\t\t\t";
         }cout<<endl;
     }
     cout<< "=------------------------------------------------------------------------------------="<<endl;
+
 
 }
